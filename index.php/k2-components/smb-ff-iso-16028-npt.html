@@ -665,89 +665,89 @@ var isRTL = false;
                                 <div class="main-inner2 clearfix">
                 <!-- SPOTLIGHT -->
 <div class="ja-box column ja-box-full" style="width: 100%;">
-        <div class="ja-moduletable moduletable  clearfix" id="Mod97">
-                        <div class="ja-box-ct clearfix">
-        <script type="text/javascript">
-    //<!--[CDATA[
-    function contentSliderInit_97 (cid) {
-        cid = parseInt(cid);
-        var containerID = 'ja-contentslider-97';
-        var container =  $(containerID);
+    	<div class="ja-moduletable moduletable  clearfix" id="Mod97">
+						<div class="ja-box-ct clearfix">
+		<script type="text/javascript">
+	//<!--[CDATA[
+	function contentSliderInit_97 (cid) {
+		cid = parseInt(cid);
+		var containerID = 'ja-contentslider-97';
+		var container =  $(containerID);
 
-        container.getElements('.jsslide').each(function(el){
-            el.dispose();
-        });
+		container.getElements('.jsslide').each(function(el){
+			el.dispose();
+		});
 
-        if(cid == 0) {
-            var elems = $('ja-contentslider-center-97').getElements('div[class*=content_element]');
-        }else{
-            var elems = $('ja-contentslider-center-97').getElements('div[class*=jaslide2_'+cid+']');
-        }
-        var total = elems.length;
+		if(cid == 0) {
+			var elems = $('ja-contentslider-center-97').getElements('div[class*=content_element]');
+		}else{
+			var elems = $('ja-contentslider-center-97').getElements('div[class*=jaslide2_'+cid+']');
+		}
+		var total = elems.length;
 
-        var options={
-            w: 110,
-            h: 96,
-            num_elem: 8,
-            mode: 'horizontal', //horizontal or vertical
-            direction: 'left', //horizontal: left or right; vertical: up or down
-            total: total,
-            url: 'http://smshydraulics.com/modules/mod_jacontentslider/mod_jacontentslider.php',
-            wrapper:  container.getElement("div.ja-contentslider-center"),
-            duration: 1000,
-            interval: 1500,
-            modid: 97,
-            running: false,
-            auto: 1        };
+		var options={
+			w: 110,
+			h: 96,
+			num_elem: 8,
+			mode: 'horizontal', //horizontal or vertical
+			direction: 'left', //horizontal: left or right; vertical: up or down
+			total: total,
+			url: 'http://smshydraulics.com/modules/mod_jacontentslider/mod_jacontentslider.php',
+			wrapper:  container.getElement("div.ja-contentslider-center"),
+			duration: 1000,
+			interval: 1500,
+			modid: 97,
+			running: false,
+			auto: 1		};
 
-        var jscontentslider = new JS_ContentSlider( options );
+		var jscontentslider = new JS_ContentSlider( options );
 
-        for(i=0;i<elems.length;i++){
-            jscontentslider.update (elems[i].innerHTML, i);
-        }
-        jscontentslider.setPos(null);
-        if(jscontentslider.options.auto){
-            jscontentslider.nextRun();
-        }
+		for(i=0;i<elems.length;i++){
+			jscontentslider.update (elems[i].innerHTML, i);
+		}
+		jscontentslider.setPos(null);
+		if(jscontentslider.options.auto){
+			jscontentslider.nextRun();
+		}
 
-                                          container.getElement(".ja-contentslide-left-img").onclick = function(){setDirection297('right', jscontentslider);};
-            container.getElement(".ja-contentslide-right-img").onclick = function(){setDirection297('left', jscontentslider);};
+				  						container.getElement(".ja-contentslide-left-img").onclick = function(){setDirection297('right', jscontentslider);};
+			container.getElement(".ja-contentslide-right-img").onclick = function(){setDirection297('left', jscontentslider);};
 
-        /**active tab**/
-        container.getElement('.ja-button-control').getElements('a').each(function(el){
-            var css = (el.getProperty('rel') == cid) ? 'active' : '';
-            el.className = css;
-        });
-    }
-    window.addEvent( 'domready', function(){ contentSliderInit_97(0); } );
+		/**active tab**/
+		container.getElement('.ja-button-control').getElements('a').each(function(el){
+			var css = (el.getProperty('rel') == cid) ? 'active' : '';
+			el.className = css;
+		});
+	}
+	window.addEvent( 'domready', function(){ contentSliderInit_97(0); } );
 
-    function setDirection97(direction,ret, jscontentslider) {
-        jscontentslider.options.direction = direction;
-        if(ret){
-            jscontentslider.options.interval = 1500;
-            jscontentslider.options.duration = 1000;
-            jscontentslider.options.auto = 1;
-            jscontentslider.nextRun();
-        }
-        else{
-            jscontentslider.options.interval = 500;
-            jscontentslider.options.duration = 500;
-            jscontentslider.options.auto = 1;
-            jscontentslider.nextRun();
-        }
-    }
-    function setDirection297(direction, jscontentslider) {
+	function setDirection97(direction,ret, jscontentslider) {
+		jscontentslider.options.direction = direction;
+		if(ret){
+			jscontentslider.options.interval = 1500;
+			jscontentslider.options.duration = 1000;
+			jscontentslider.options.auto = 1;
+			jscontentslider.nextRun();
+		}
+		else{
+			jscontentslider.options.interval = 500;
+			jscontentslider.options.duration = 500;
+			jscontentslider.options.auto = 1;
+			jscontentslider.nextRun();
+		}
+	}
+	function setDirection297(direction, jscontentslider) {
 
-        jscontentslider.options.direction = direction;
-        jscontentslider.options.interval = 500;
-        jscontentslider.options.duration = 200;
-        jscontentslider.options.auto = 1;
-        jscontentslider.nextRun();
-        jscontentslider.options.auto = 1;
-        jscontentslider.options.interval = 1500;
-        jscontentslider.options.duration = 1000;
-    }
-    //]]-->
+		jscontentslider.options.direction = direction;
+		jscontentslider.options.interval = 500;
+		jscontentslider.options.duration = 200;
+		jscontentslider.options.auto = 1;
+		jscontentslider.nextRun();
+		jscontentslider.options.auto = 1;
+		jscontentslider.options.interval = 1500;
+		jscontentslider.options.duration = 1000;
+	}
+	//]]-->
 </script>
 
 <div id="ja-contentslider-97" class="ja-contentslider clearfix" >
@@ -756,8 +756,8 @@ var isRTL = false;
           </div>
   <div class="ja-button-control">
 
-                         <div class="ja-contentslider-right ja-contentslide-right-img" title="Next">&nbsp;</div>
-            <div class="ja-contentslider-left ja-contentslide-left-img" title="Previous">&nbsp;</div>
+     					<div class="ja-contentslider-right ja-contentslide-right-img" title="Next">&nbsp;</div>
+			<div class="ja-contentslider-left ja-contentslide-left-img" title="Previous">&nbsp;</div>
 
   </div>
 
@@ -768,7 +768,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/75-pressure-washer-male.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Pressure-Washer-Male-sm_100_86.png"  alt="Pressure Washer Male" title="Pressure Washer Male" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/smb-st-pressure-washer.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Pressure-Washer-Male-sm_100_86.png"  alt="Pressure Washer Male" title="Pressure Washer Male" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -776,7 +776,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/76-iso-5676-ag-coupler.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-5676-AG-COUPLER-sm_100_86.png"  alt="ISO-5676-AG-COUPLER" title="ISO-5676-AG-COUPLER" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/ag-smb-series-steel.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-5676-AG-COUPLER-sm_100_86.png"  alt="ISO-5676-AG-COUPLER" title="ISO-5676-AG-COUPLER" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -784,7 +784,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/77-iso-16028-flat-face-non-spill.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-16028-FLAT-FACE-NON-SPILL-sm_100_86.png"  alt="ISO 16028 FLAT-FACE (NON-SPILL)" title="ISO 16028 FLAT-FACE (NON-SPILL)" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/smb-ff-iso-16028-npt.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-16028-FLAT-FACE-NON-SPILL-sm_100_86.png"  alt="ISO 16028 FLAT-FACE (NON-SPILL)" title="ISO 16028 FLAT-FACE (NON-SPILL)" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -792,7 +792,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/78-vep-series.html" title="" class="ja-image"><img src="./../../images/stories/scroller/VEP-Series-sm_100_86.png"  alt="SCVEP Series" title="SCVEP Series" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/smb-st-pressure-washer.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Pressure-Washer--Female-sm_100_86.png"  alt="Pressure Washer Female" title="Pressure Washer Female" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -800,7 +800,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/79-pressure-washer-female.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Pressure-Washer--Female-sm_100_86.png"  alt="Pressure Washer Female" title="Pressure Washer Female" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/smb-high-pressure.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Ennerpac-Screw-Coupling-sm_100_86.png"  alt="Enerpac Screw Couplers" title="Enerpac Screw Couplers" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -808,7 +808,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/80-enerpac-screw-couplers.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Ennerpac-Screw-Coupling-sm_100_86.png"  alt="Enerpac Screw Couplers" title="Enerpac Screw Couplers" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/iso-a-series-npt.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-A-sm_100_86.png"  alt="ISO-A" title="ISO-A" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -816,7 +816,7 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/81-iso-a.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-A-sm_100_86.png"  alt="ISO-A" title="ISO-A" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/iso-b-series-npt.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-B-SM_100_86.png"  alt="ISO-B" title="ISO-B" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
@@ -824,22 +824,14 @@ var isRTL = false;
                                 <div class="ja_slideimages tooltips clearfix">
           <div class="ja_slideimages_inner">
             <div class="content">
-              <a href="../component/content/article/80-partners/82-iso-b.html" title="" class="ja-image"><img src="./../../images/stories/scroller/ISO-B-SM_100_86.png"  alt="ISO-B" title="ISO-B" width="100" height="86"  /></a>            </div>
-          </div>
-        </div>
-                                      </div>
-            <div class="content_element jaslide2_80" style="display:none;">
-                                <div class="ja_slideimages tooltips clearfix">
-          <div class="ja_slideimages_inner">
-            <div class="content">
-              <a href="../component/content/article/80-partners/84-wing-style-coupler.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Wing-Style-Coupler-sm_100_86.png"  alt="Wing Style Coupler" title="Wing Style Coupler" width="100" height="86"  /></a>            </div>
+              <a href="./../../index.php/k2-components/smb-w-series-wing-style.html" title="" class="ja-image"><img src="./../../images/stories/scroller/Wing-Style-Coupler-sm_100_86.png"  alt="Wing Style Coupler" title="Wing Style Coupler" width="100" height="86"  /></a>            </div>
           </div>
         </div>
                                       </div>
           </div>
   </div>
 </div>
-        </div>
+		</div>
     </div>
 
 </div>
