@@ -679,8 +679,7 @@ div.moduletable.big-title h3 {
 #ja-toll-free span { color: #ccc; }
 
 #ja-toll-free a {
-  border-bottom: 1px dotted #666;
-  color: #ccc;
+  color: #222;
 }
 
 #ja-toll-free a:hover, #ja-toll-free a:focus, #ja-toll-free a:active {
@@ -695,9 +694,9 @@ div.moduletable.big-title h3 {
 
 #ja-header .main-inner2 {
   /*background: url(../images/bg-header.png) 0 100%  repeat-x #141414;*/
-  background: url(../images/bg-header.jpg);
-  padding-bottom: 30px;
-  padding-top: 100px;
+  background: url(../images/bg-header.png);
+  padding-bottom: 10px;
+  padding-top: 118px;
 }
 
 h1.logo, 
@@ -714,7 +713,7 @@ h1.logo {
 }
 
 h1.logo a {
-  background: url(../images/logo3.png) no-repeat left;
+  /*background: url(../images/logo3.png) no-repeat left;*/
   display: block;
   height: 142px;
   width: 430px;
