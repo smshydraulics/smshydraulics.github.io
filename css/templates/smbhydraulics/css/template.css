@@ -45,8 +45,7 @@ body {
 }
 
 body#bd {
-  background: url(../images/bg-body.png) 0 0 repeat-x #fff;
-  color: #666;
+  background-color: #333;
 }
 
 /* Normal links ---*/
