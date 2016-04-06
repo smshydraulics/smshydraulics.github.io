@@ -655,12 +655,12 @@ div.moduletable.big-title h3 {
   margin-right: 0 !important;
   padding-left: 30px;
   padding-right: 30px;
-  background: #fff;
+  background-color: #efefef;
 }
 
 #ja-container .main .inner { padding-left: 0; padding-right: 0; }
 
-#ja-container .main .main-inner2 { padding: 20px 30px 0 30px; }
+#ja-container .main .main-inner2 { padding: 20px 30px 0 30px; background-color: #efefef; }
 
 #ja-container.ja-l1 .main .inner { padding-left: 14px; }
 
@@ -671,6 +671,7 @@ div.moduletable.big-title h3 {
 #ja-toll-free {
   float: right;
   font-size: 92%;
+  height: 38px;
 }
 
 #ja-toll-free p { font-weight: bold; }
@@ -696,6 +697,7 @@ div.moduletable.big-title h3 {
   background: url(../images/bg-header.png);
   padding-bottom: 10px;
   padding-top: 118px;
+  background-color: #efefef;
 }
 
 h1.logo, 
@@ -740,6 +742,7 @@ p.site-slogan {
 #ja-mainnav .main-inner2 {
   background: url(../images/bg-nav.gif) 0 0 repeat-x #fff;
   padding: 0;
+  background-color: #efefef;
 }
 
 .no-sm #ja-mainnav .main-inner2 { padding-bottom: 40px; }
@@ -765,6 +768,7 @@ p.site-slogan {
   border-top: 1px solid #e6e6e6;
   padding-top: 8px;
   padding-bottom: 8px;
+  background-color: #efefef;
 }
 
 /* Extras ---*/

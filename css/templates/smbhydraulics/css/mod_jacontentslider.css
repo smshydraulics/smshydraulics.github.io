@@ -30,6 +30,7 @@
 	width: 23px;
 	z-index: 5;
 	overflow:hidden;
+    display: none;
 }
 
 .ja-contentslide-right-img:hover , .ja-contentslide-left-img:hover { background-position: 0 -23px; }
@@ -44,6 +45,7 @@
 	width: 23px;
 	z-index: 5;
 	overflow:hidden;
+    display: none;
 }
 
 .ja-contentslider { position:relative; }
