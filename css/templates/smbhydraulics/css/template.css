@@ -641,7 +641,7 @@ div.moduletable.big-title h3 {
 --------------------------------------------------------- */
 #ja-wrapper .main {
   background: url(../images/bg-left.png) left top repeat-y;
-  padding: 0px 0px 0px 8px;
+  padding: 0px 0px 0px 0px;
 }
 
 #ja-wrapper .main .main-inner1 {
@@ -760,7 +760,7 @@ p.site-slogan {
 #ja-navhelper { font-size: 100%; }
 
 #ja-navhelper .main {
-  padding: 0 0 0 8px;
+  padding: 0 0 0 0px;
 }
 
 #ja-navhelper .main-inner2 {
