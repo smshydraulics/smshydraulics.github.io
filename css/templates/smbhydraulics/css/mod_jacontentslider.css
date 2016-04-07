@@ -51,3 +51,5 @@
 .ja-contentslider { position:relative; }
 
 .ja-contentslider-center .content { padding: 0 4px; }
+
+.ja_slideimages_inner .content img { border: #fdfdfd solid 5px; }
