@@ -162,6 +162,10 @@ function ShopifyBuyInit() {
 
   ShopifyBuy.UI.onReady(client).then(function (ui) {
     var node = document.getElementById('shopify-buy-button');
+    if (node === null) {
+        return;
+    }
+
     var productId = node.getAttribute('data-shopifyid');
     ui.createComponent('product', {
       id: productId,

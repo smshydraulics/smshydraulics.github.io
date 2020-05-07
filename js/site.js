@@ -75,12 +75,30 @@ function setupEmailClick() {
 }
 
 //-----------------------------------------------------------------------------
+
+function loadGoogleAnalytics() {
+  var scriptURL = 'https://www.googletagmanager.com/gtag/js?id=UA-165851168-1';
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = scriptURL;
+  (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(script);
+  script.onload = function () {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-165851168-1');
+  };
+}
+
+//-----------------------------------------------------------------------------
 // main
 //-----------------------------------------------------------------------------
 
 window.onload = function () {
     setupMenuHover();
     setupEmailClick();
+    loadGoogleAnalytics();
 };
 
 //-----------------------------------------------------------------------------
